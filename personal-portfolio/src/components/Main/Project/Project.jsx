@@ -1,4 +1,5 @@
 import ProjectCard from "../../ProjectCard/ProjectCard";
+import FeedbackCarousel from "./Feedback/FeedbackCarousel";
 
 const Project = () => {
   const projectCardData = [
@@ -48,6 +49,9 @@ const Project = () => {
           );
         })}
       </div>
+      <h2>Feedback from GA</h2>
+      <FeedbackCarousel/>
+      
     </section>
   );
 };
