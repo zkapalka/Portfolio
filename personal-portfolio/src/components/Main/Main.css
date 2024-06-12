@@ -2,30 +2,35 @@
 /* Main content styles */
 main {
     padding: 2rem;
+    margin-bottom: 10%;
   }
   
   .hero {
+    font-size: 1rem;
     background-color: #f4f4f4;
     text-align: center;
+    margin-bottom: 1rem;
     padding: 4rem 2rem;
   }
+
   
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
+  .hero p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin: 2%;
   }
   
-  .hero-content button {
+  .hero button {
     background-color: #333;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border: none;
     cursor: pointer;
+    margin: 2%;
+  }
+
+  .hero button:hover {
+    background-color: #555; 
+    color: #ddd;           
   }
   
   .about,

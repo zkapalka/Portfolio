@@ -1,4 +1,12 @@
+import styled from 'styled-components';
 import ProjectCard from "../../ProjectCard/ProjectCard";
+import FeedbackCarousel from "./Feedback/FeedbackCarousel";
+
+// Styled component for the h2 tag
+const StyledH2 = styled.h2`
+  text-align: center;
+  margin: 3%;
+`;
 
 const Project = () => {
   const projectCardData = [
@@ -38,16 +46,19 @@ const Project = () => {
       description: "My capstone using React, Spring, and PostreSQL",
     }
   ];
+
   return (
     <section className="projects" id="projects">
-      <h2>My Projects</h2>
+      {/* Apply the styled component */}
+      <StyledH2>My Projects</StyledH2>
       <div className="project-grid">
-        {projectCardData.map((project, index) => {
-          return (
-            <ProjectCard key={index} link={project.link} image={project.image} alt={project.alt} projectName={project.projectName} description={project.description}/>
-          );
-        })}
+        {projectCardData.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
+      {/* Apply the styled component */}
+      <StyledH2>Feedback from GA</StyledH2>
+      <FeedbackCarousel />
     </section>
   );
 };
