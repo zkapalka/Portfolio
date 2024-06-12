@@ -1,4 +1,4 @@
-import Hero from "./Hero/Hero";
+import Home from "./Home/Home";
 import About from "./About/About";
 import "./Main.css";
 import Project from "./Project/Project";
@@ -6,8 +6,7 @@ import Project from "./Project/Project";
 const Main = () => {
   return (
     <main>
-        {/* commenting hero out */}
-      {/* < Hero /> */}
+      < Home />
       < About />
       < Project />
     </main>
