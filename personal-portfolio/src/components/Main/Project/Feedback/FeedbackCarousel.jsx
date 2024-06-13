@@ -82,9 +82,9 @@ const feedbackData = [
     feedback: 'Project almost certainly on track for completion.',
   },
   {
-    week: 'Week 16',
-    rating: 'Red',
-    feedback: 'Needs Improvement',
+    week: 'Week 16 - Capstone',
+    rating: '100.5',
+    feedback: 'The project is truly remarkable, with so many positive aspects to highlight. The presentation was great, and the UI is stunning. The validation for login and signup is awesome, ensuring a seamless user experience. The filtering by name and platform is excellent, adding significant functionality. The validation on the profile edit is also very well done. Zach has made great use of local storage, and his code is clean and well-structured. The application of Software Engineering principles is on point, and the documentation is thorough and clear.',
   },
 ];
 
