@@ -92,10 +92,15 @@ const CarouselContainer = styled.div`
   width: 90vw;
   height: 40vh;
   margin: 0 auto;
-   overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow: hidden; /* Prevent overflow */
+
+  .slick-list {
+    padding-bottom: 20px; /* Add padding to avoid overlapping */
+  }
 
   .slick-slide {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%; /* Ensure the slide takes up the full height of the container */
@@ -104,10 +109,15 @@ const CarouselContainer = styled.div`
     padding: 10px;
     border-radius: 5%;
     margin-right: 10px; /* Add margin between slides */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
   .slick-slide:last-child {
     margin-right: 0; /* Remove margin from the last slide to prevent extra spacing */
+  }
+
+  .slick-dots {
+    bottom: -30px; /* Move dots below slides to avoid overlap */
   }
 `;
 
@@ -116,7 +126,7 @@ const FeedbackCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000
