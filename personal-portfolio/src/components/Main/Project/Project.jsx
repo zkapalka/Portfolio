@@ -58,6 +58,8 @@ const Project = () => {
       </div>
       {/* Apply the styled component */}
       <StyledH2>Feedback from GA</StyledH2>
+      <p>Week 1 to 8, GA used a color rating system from blue being the highest, green being good, yellow and then finally red.</p>
+      <p>Starting from Week 9, we converted to a different rating that essentially tracked how much work was submitted from 100% to 0% work being submitted</p>
       <FeedbackCarousel />
     </section>
   );
