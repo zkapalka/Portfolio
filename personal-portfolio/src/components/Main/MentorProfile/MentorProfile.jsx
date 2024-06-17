@@ -6,9 +6,12 @@ const ProfileContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #f9f9f9;
+
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-top: 15%; /* Adjust this value based on the header height */
+  margin-top: 0%; /* Adjust this value based on the header height */
 `;
 
 const MentorImage = styled.img`

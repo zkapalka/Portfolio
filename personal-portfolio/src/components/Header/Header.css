@@ -1,34 +1,35 @@
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
 header img {
-    border-radius: 20%;
-    height: 20vh;
-    width: 50vh;
+  border-radius: 20%;
+  height: 10vh;
+  width: 20vh;
 }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    display: flex;
-    
-   
-  }
-  
-  nav ul li {
-    margin-left: 1rem;
-  }
-  
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}

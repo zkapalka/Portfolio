@@ -1,6 +1,6 @@
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
-import Asides from './components/Asides/Asides'
+import Asides from './components/Skills/Skills'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
