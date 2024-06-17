@@ -1,3 +1,4 @@
+import ResumeButton from "../Resume/ResumeButton"
 
 const About = () => {
     return (
@@ -27,6 +28,8 @@ const About = () => {
           <img src="src/assets/Flexy Zach.jpeg" alt="About Image" />
         </div>
       </div>
+
+      <ResumeButton/>
     </section>
     )
   }
