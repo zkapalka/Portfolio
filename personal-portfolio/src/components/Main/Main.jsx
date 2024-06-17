@@ -2,6 +2,7 @@ import Home from "./Home/Home";
 import About from "./About/About";
 import "./Main.css";
 import Project from "./Project/Project";
+import MentorProfile from "./MentorProfile/MentorProfile";
 
 const Main = () => {
   return (
@@ -9,6 +10,7 @@ const Main = () => {
       < Home />
       < About />
       < Project />
+      < MentorProfile />
     </main>
   );
 };
