@@ -1,11 +1,34 @@
+import React from 'react';
 import styled from 'styled-components';
-import ProjectCard from "../../ProjectCard/ProjectCard";
+import ProjectCard from "./ProjectCard/ProjectCard";
 import FeedbackCarousel from "./Feedback/FeedbackCarousel";
+
+// Styled component for the section
+const Section = styled.section`
+  position: relative;
+  padding-top: 15%; /* Adjust this value based on the header height */
+  margin-top: 0%; /* Adjust this value based on the header height */
+`;
 
 // Styled component for the h2 tag
 const StyledH2 = styled.h2`
   text-align: center;
   margin: 3%;
+`;
+
+// Styled component for the project grid
+const ProjectGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+`;
+
+// Styled component for the paragraphs
+const StyledParagraph = styled.p`
+  text-align: center;
+  margin: 1rem 0;
 `;
 
 const Project = () => {
@@ -48,20 +71,22 @@ const Project = () => {
   ];
 
   return (
-    <section className="projects" id="projects">
-      {/* Apply the styled component */}
+    <Section id="projects">
       <StyledH2>My Projects</StyledH2>
-      <div className="project-grid">
+      <ProjectGrid>
         {projectCardData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
-      </div>
-      {/* Apply the styled component */}
+      </ProjectGrid>
       <StyledH2>Feedback from GA</StyledH2>
-      <p>Week 1 to 8, GA used a color rating system from blue being the highest, green being good, yellow and then finally red.</p>
-      <p>Starting from Week 9, we converted to a different rating that essentially tracked how much work was submitted from 100% to 0% work being submitted</p>
+      <StyledParagraph>
+        Week 1 to 8, GA used a color rating system from blue being the highest, green being good, yellow and then finally red.
+      </StyledParagraph>
+      <StyledParagraph>
+        Starting from Week 9, we converted to a different rating that essentially tracked how much work was submitted from 100% to 0% work being submitted.
+      </StyledParagraph>
       <FeedbackCarousel />
-    </section>
+    </Section>
   );
 };
 
