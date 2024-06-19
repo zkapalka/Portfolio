@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ResumeButton from "./Resume/ResumeButton";
+import zachProfile from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/zachProfile.jpeg';
+
 
 const Section = styled.section`
   position: relative;
@@ -60,7 +62,7 @@ const About = () => {
           </p>
         </AboutText>
         <AboutImage>
-          <img src="src/assets/Flexy Zach.jpeg" alt="About Image" />
+          <img src={zachProfile} alt="About Image" />
         </AboutImage>
       </AboutContent>
       <ResumeButton />

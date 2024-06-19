@@ -1,5 +1,6 @@
 import List from "../List/List";
 import "./Header.css"
+import kapalkaLogo from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/kapalkaLogo.png';
 
 const Header = () => {
   const listObjects = [
@@ -14,7 +15,7 @@ const Header = () => {
     <header>
       <nav>
         <div className="logo">
-          <a href="#"><img src="src/assets/Kapalka Logo.png"></img></a>
+          <a href="#"><img src={kapalkaLogo}></img></a>
         </div>
         <ul>
           {

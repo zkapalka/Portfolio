@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import mentorProfile from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/mentorProfile.jpeg';
+
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -85,7 +87,7 @@ const MentorProfile = () => {
   return (
     <ProfileContainer id='mentor'>
       <h2 >Mentor Profile</h2>
-      <MentorImage src="src/assets/Mentor-Picture.jpeg" alt="Mentor's profile picture" />
+      <MentorImage src={mentorProfile} alt="Mentor's profile picture" />
       <MentorName>Adam Kreiss</MentorName>
       <MentorTitle>Software Engineer - Enterprise</MentorTitle>
       <MentorBio>

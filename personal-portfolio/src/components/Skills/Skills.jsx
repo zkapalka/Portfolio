@@ -1,5 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import barbellRow from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/barbellRow.png';
+import cssIcon from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/cssIcon.svg';
+import gitIcon from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/gitIcon.svg';
+import javaIcon from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/javaIcon.svg';
+import reactIcon from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/reactIcon.svg';
+import springIcon from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/springIcon.svg';
+import postgressqlIcon from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/postgresqlIcon.svg';
 
 const StyledAside = styled.aside`
   display: flex;
@@ -33,7 +40,7 @@ const SkillInfo = styled.div`
 `;
 
 const SkillImage = styled.img`
-  width: 100%;
+  width: 20%;
   height: auto; /* Ensuring aspect ratio is maintained */
   border-radius: 10%;
 `;
@@ -46,37 +53,37 @@ const SkillName = styled.p`
 const Aside = () => {
   const skillData = [
     {
-      img: "src/assets/React-icon.svg",
+      img: reactIcon,
       imgAlt: "React Logo Icon",
       name: "React",
     },
     {
-      img: "src/assets/java.svg",
+      img: javaIcon,
       imgAlt: "Java Logo Icon",
       name: "Java",
     },
     {
-      img: "src/assets/Git_icon.svg",
+      img: gitIcon,
       imgAlt: "Git Logo Icon",
       name: "Git",
     },
     {
-      img: "src/assets/postgresql.svg",
+      img: postgressqlIcon,
       imgAlt: "PostreSQL Logo Icon",
       name: "PostreSQL",
     },
     {
-      img: "src/assets/css-3.svg",
+      img: cssIcon,
       imgAlt: "CSS Icon",
       name: "CSS",
     },
     {
-      img: "src/assets/spring-3.svg",
+      img: springIcon,
       imgAlt: "Spring Logo Icon",
       name: "Spring",
     },
     {
-      img: "src/assets/Barbell-rear-delt-row-2.png",
+      img: barbellRow,
       imgAlt: "React Logo Icon",
       name: "Lifting Heavy Stuff",
     }

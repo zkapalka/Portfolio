@@ -2,6 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import ProjectCard from "./ProjectCard/ProjectCard";
 import FeedbackCarousel from "./Feedback/FeedbackCarousel";
+import backFlex from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/backFlex.jpg';
+import Capstone from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/Capstone.jpg';
+import dictionary from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/dictionary.jpg';
+import shoe from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/shoe.jpeg';
+import portfolioPic from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/portfolioPic.jpg';
+
 
 // Styled component for the section
 const Section = styled.section`
@@ -35,36 +41,36 @@ const Project = () => {
   const projectCardData = [
     {
       link: "https://github.com/zkapalka/GA_Stuff/tree/main/personal_portfolio-master",
-      image: "src/assets/portfolio.jpg",
+      image: portfolioPic,
       alt: "Picture of the word portfolio",
       projectName: "Personal Portfolio",
       description: "A personal portfolio project using JavaScript",
     },
     { 
       link: "https://github.com/zkapalka/GA_Stuff/tree/main/Week_4-master",
-      image: "src/assets/shoe.jpeg",
+      image: shoe,
       alt: "Collection of different shoes arranged in the color of a rainbow",
       projectName: "DEI JavaScript Project",
       description: "A prototype of a job board aimed at Deaf people using JavaScript",
     },
     {
       link: "https://github.com/zkapalka/GA_Stuff/tree/main/week_6-main/day_3/java-project-dictionary-application-master",
-      image: "src/assets/dictionary-words-grammar-education-8b6784-1024 (1).jpg",
+      image: dictionary,
       alt: "Pic of the definition of dictionary",
       projectName: "Dictionary Java App",
       description: "A basic dictionary app using Java",
     },
     { 
       link: "https://github.com/zkapalka/GA_Stuff/tree/main/week_12_SpringProject-develop",
-      image: "src/assets/Back flex.jpg",
+      image: backFlex,
       alt: "Drawing of man flexing back",
       projectName: "Backend Spring Project",
       description: "A project mimicking basic CRUD services for a job board using Spring and PostreSQL",
     },
     {
       link: "https://github.com/zkapalka/GA_Stuff/tree/main/capstone",
-      image: "src/assets/Capstone.jpg",
-      alt: "Project 6",
+      image: Capstone,
+      alt: "A pic of a big rock resting on other rocks, like a capstone, lololololol",
       projectName: "Capstone Project",
       description: "My capstone using React, Spring, and PostreSQL",
     }
