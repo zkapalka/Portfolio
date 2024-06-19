@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import kapalkaResume from '/Users/zkapalka/Desktop/Portfolio/personal-portfolio/src/assets/kapalkaResume.pdf';
 
 // Styled button using styled-components
 const Button = styled.button`
@@ -19,7 +20,7 @@ const Button = styled.button`
 
 const ResumeButton = () => {
   return (
-    <a href="/public/Zach Kapalka Resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a href={kapalkaResume} target="_blank" rel="noopener noreferrer">
       <Button>Check my resume out</Button>
     </a>
   );

@@ -3,6 +3,7 @@
     padding: 1rem;
     text-align: center;
     border-radius: 20%;
+    max-width: 30%;
   }
   
   .project-card img {
